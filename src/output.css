@@ -9,15 +9,24 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-700: oklch(37.3% 0.034 259.733);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-white: #fff;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --font-weight-bold: 700;
+    --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -177,6 +186,12 @@
   .m-auto {
     margin: auto;
   }
+  .mt-\[-100px\] {
+    margin-top: -100px;
+  }
+  .mt-\[-150px\] {
+    margin-top: -150px;
+  }
   .mt-\[5px\] {
     margin-top: 5px;
   }
@@ -195,6 +210,9 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
   .mt-\[px\] {
     margin-top: px;
   }
@@ -210,6 +228,15 @@
   .table {
     display: table;
   }
+  .h-\[300px\] {
+    height: 300px;
+  }
+  .h-\[350px\] {
+    height: 350px;
+  }
+  .h-\[370px\] {
+    height: 370px;
+  }
   .h-\[400px\] {
     height: 400px;
   }
@@ -221,6 +248,9 @@
   }
   .w-\[200px\] {
     width: 200px;
+  }
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-\[500px\] {
     width: 500px;
@@ -255,6 +285,9 @@
   .gap-\[50px\] {
     gap: 50px;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .rounded-\[8px\] {
     border-radius: 8px;
   }
@@ -280,8 +313,26 @@
   .bg-\[\#030303\] {
     background-color: #030303;
   }
+  .bg-\[\#141414\] {
+    background-color: #141414;
+  }
   .bg-\[\#\] {
     background-color: #;
+  }
+  .bg-\[gr\] {
+    background-color: gr;
+  }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
+  }
+  .bg-gray-700 {
+    background-color: var(--color-gray-700);
+  }
+  .bg-gray-800 {
+    background-color: var(--color-gray-800);
+  }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
   }
   .p-\[3px\] {
     padding: 3px;
@@ -298,6 +349,18 @@
   .font-serif {
     font-family: var(--font-serif);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
@@ -305,6 +368,36 @@
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-\[3px\] {
+    font-size: 3px;
+  }
+  .text-\[13px\] {
+    font-size: 13px;
+  }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
+  .text-\[35px\] {
+    font-size: 35px;
+  }
+  .text-\[37px\] {
+    font-size: 37px;
+  }
+  .text-\[38px\] {
+    font-size: 38px;
+  }
+  .text-\[39px\] {
+    font-size: 39px;
+  }
+  .text-\[50px\] {
+    font-size: 50px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -340,6 +433,11 @@
   .lg\:mt-\[-3\] {
     @media (width >= 64rem) {
       margin-top: -3;
+    }
+  }
+  .lg\:mt-\[-150px\] {
+    @media (width >= 64rem) {
+      margin-top: -150px;
     }
   }
   .lg\:mt-\[-200px\] {
@@ -382,6 +480,11 @@
       margin-left: 50px;
     }
   }
+  .lg\:ml-\[100px\] {
+    @media (width >= 64rem) {
+      margin-left: 100px;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -395,6 +498,12 @@
   .lg\:h-\[500px\] {
     @media (width >= 64rem) {
       height: 500px;
+    }
+  }
+  .lg\:text-3xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
 }
